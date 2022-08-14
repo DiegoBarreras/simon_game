@@ -1,0 +1,86 @@
+body {
+    line-height: 4rem;
+    background-color: #467c6e;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+#footer {
+    position: fixed;
+    padding: 10px 10px 20px 10px;
+    bottom: 0;
+    width: 97%;
+    height: 40px;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+  
+  }
+
+.btn {
+    margin: 0px 9px 0px 9px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border-radius: 15%;
+}
+
+.green{
+    background-color: #7CB343;
+}
+
+.red {
+    background-color: #F34434;
+}
+
+.yellow {
+    background-color: #EFA804;
+}
+
+.blue {
+    background-color: #2393F3;
+}
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+
+span:before {
+    content: "";
+    animation: animate infinite 5s;
+}
+@keyframes animate {
+    0% {
+        content : "🟥 Press A Key To Start ​🟨";
+    }
+
+    25% {
+        content : "🟨 Press A Key To Start ​🟦";
+    }
+
+    50% {
+        content : "​🟦 Press A Key To Start ​🟩";
+    }
+
+    75% {
+        content : "🟩 Press A Key To Start ​🟥";
+    }
+
+    100% {
+        content : "🟥 Press A Key To Start ​🟨";
+    }
+}
